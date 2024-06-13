@@ -2,8 +2,8 @@ def iniciar_recorrido_back(matriz: list, punto_actual: list, final: list, lista_
     if punto_actual == [final[0]-1, final[1]-1]:
         print('Finalizado!!!')
         return
-    x_actual = punto_actual[0]
-    y_actual = punto_actual[1]
+
+    x_actual, y_actual = punto_actual
     largo_matriz = len(matriz)
     print(f'X: {x_actual} - Y: {y_actual}')
     if x_actual + 1 < largo_matriz and [x_actual + 1, y_actual] not in lista_puntos_visitados:

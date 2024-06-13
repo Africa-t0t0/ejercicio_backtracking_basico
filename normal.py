@@ -1,8 +1,7 @@
 def iniciar_recorrido(matriz: list, inicio: list, final: list) -> list:
     lista_puntos_visitados = []
     matriz_a_mostrar = matriz.copy()
-    eje_x_inicio = inicio[0]
-    eje_y_inicio = inicio[1]
+    eje_x_inicio, eje_y_inicio = inicio
     x_actual = eje_x_inicio
     y_actual = eje_y_inicio
     largo_matriz = len(matriz[0])
@@ -46,5 +45,4 @@ def iniciar_recorrido(matriz: list, inicio: list, final: list) -> list:
                 continue
             else:
                 pass
-
     print(f'Finalizado, llegamos uwu \n {matriz}')
